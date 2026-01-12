@@ -3,126 +3,364 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Serene Yacht Charters - Premium Boat Rentals</title>
+    <title>Azure Dreams - Luxury Yacht Rental</title>
     <link rel="stylesheet" href="styles.css" />
     <link
-      href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Open+Sans:wght@300;400;600&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600;700&family=Montserrat:wght@300;400;500;600&display=swap"
       rel="stylesheet"
     />
   </head>
   <body>
+    <nav class="navbar">
+      <div class="nav-brand">Azure Dreams</div>
+      <div class="nav-links">
+        <a href="#about" data-en="About" data-fr="À propos">About</a>
+        <a href="#gallery" data-en="Gallery" data-fr="Galerie">Gallery</a>
+        <a href="#pricing" data-en="Rates" data-fr="Tarifs">Rates</a>
+        <a href="#contact" data-en="Contact" data-fr="Contact">Contact</a>
+        <div class="lang-switcher">
+          <button class="lang-btn active" data-lang="en">EN</button>
+          <span class="lang-divider">|</span>
+          <button class="lang-btn" data-lang="fr">FR</button>
+        </div>
+      </div>
+    </nav>
+
     <header class="hero">
       <div class="hero-content">
-        <h1>Serene Yacht Charters</h1>
-        <p>Luxury Boat Rentals for Your Perfect Getaway</p>
-        <a href="#contact" class="cta-button">Book Your Adventure</a>
+        <span
+          class="hero-subtitle"
+          data-en="Premium Yacht Experience"
+          data-fr="Expérience Yacht Premium"
+          >Premium Yacht Experience</span
+        >
+        <h1>Azure Dreams</h1>
+        <p
+          data-en="Discover the freedom of the open sea aboard our magnificent 45-foot luxury yacht"
+          data-fr="Découvrez la liberté de la mer à bord de notre magnifique yacht de luxe de 45 pieds"
+        >
+          Discover the freedom of the open sea aboard our magnificent 45-foot
+          luxury yacht
+        </p>
+        <div class="hero-scroll">
+          <span data-en="Scroll to explore" data-fr="Défiler pour explorer"
+            >Scroll to explore</span
+          >
+          <div class="scroll-indicator"></div>
+        </div>
       </div>
-      <div class="hero-overlay"></div>
     </header>
 
     <main>
-      <section class="about">
+      <section class="about" id="about">
         <div class="container">
-          <h2>Experience Luxury on the Water</h2>
-          <div class="about-content">
-            <div class="about-text">
-              <p>
-                Step aboard our stunning 45-foot luxury yacht and experience the
-                ultimate in maritime elegance. Perfect for romantic getaways,
-                family celebrations, or corporate events, our vessel combines
-                modern comfort with timeless sophistication.
-              </p>
-              <p>
-                Cruise along pristine coastlines, anchor in secluded bays, and
-                create memories that will last a lifetime. Our experienced
-                captain and crew ensure your safety and comfort while you relax
-                and enjoy the journey.
-              </p>
+          <div class="section-header">
+            <span
+              class="section-tag"
+              data-en="The Experience"
+              data-fr="L'Expérience"
+              >The Experience</span
+            >
+            <h2
+              data-en="Unforgettable Moments on the Water"
+              data-fr="Des Moments Inoubliables sur l'Eau"
+            >
+              Unforgettable Moments on the Water
+            </h2>
+          </div>
+          <div class="about-grid">
+            <div class="about-image">
+              <img
+                src="https://images.unsplash.com/photo-1567899378494-47b22a2ae96a?w=800&q=80"
+                alt="Luxury yacht sailing"
+              />
             </div>
-            <div class="features">
-              <div class="feature">
-                <h3>Capacity</h3>
-                <p>Up to 12 guests</p>
-              </div>
-              <div class="feature">
-                <h3>Duration</h3>
-                <p>Half-day to full-week charters</p>
-              </div>
-              <div class="feature">
-                <h3>Amenities</h3>
-                <p>Fully equipped galley, sun deck, sound system</p>
+            <div class="about-content">
+              <p
+                class="lead"
+                data-en="Step aboard our stunning vessel and experience maritime elegance at its finest."
+                data-fr="Montez à bord de notre superbe navire et vivez l'élégance maritime à son apogée."
+              >
+                Step aboard our stunning vessel and experience maritime elegance
+                at its finest.
+              </p>
+              <p
+                data-en="Perfect for romantic getaways, family celebrations, or simply escaping the everyday. Cruise along pristine coastlines, anchor in secluded bays, and create memories that will last a lifetime."
+                data-fr="Parfait pour des escapades romantiques, des célébrations en famille, ou simplement pour échapper au quotidien. Naviguez le long de côtes préservées, ancrez dans des baies isolées et créez des souvenirs qui dureront toute une vie."
+              >
+                Perfect for romantic getaways, family celebrations, or simply
+                escaping the everyday. Cruise along pristine coastlines, anchor
+                in secluded bays, and create memories that will last a lifetime.
+              </p>
+              <div class="specs">
+                <div class="spec-item">
+                  <span class="spec-number">45</span>
+                  <span
+                    class="spec-label"
+                    data-en="Feet Length"
+                    data-fr="Pieds de Long"
+                    >Feet Length</span
+                  >
+                </div>
+                <div class="spec-item">
+                  <span class="spec-number">12</span>
+                  <span
+                    class="spec-label"
+                    data-en="Guest Capacity"
+                    data-fr="Capacité d'Accueil"
+                    >Guest Capacity</span
+                  >
+                </div>
+                <div class="spec-item">
+                  <span class="spec-number">3</span>
+                  <span class="spec-label" data-en="Cabins" data-fr="Cabines"
+                    >Cabins</span
+                  >
+                </div>
               </div>
             </div>
           </div>
         </div>
       </section>
 
-      <section class="gallery">
+      <section class="features-strip">
+        <div class="feature-item">
+          <span class="feature-icon">⚓</span>
+          <span data-en="Professional Captain" data-fr="Capitaine Professionnel"
+            >Professional Captain</span
+          >
+        </div>
+        <div class="feature-item">
+          <span class="feature-icon">🍾</span>
+          <span data-en="Premium Amenities" data-fr="Équipements Premium"
+            >Premium Amenities</span
+          >
+        </div>
+        <div class="feature-item">
+          <span class="feature-icon">☀️</span>
+          <span data-en="Sun Deck & Lounge" data-fr="Pont Soleil & Salon"
+            >Sun Deck & Lounge</span
+          >
+        </div>
+        <div class="feature-item">
+          <span class="feature-icon">🎵</span>
+          <span data-en="Sound System" data-fr="Système Audio"
+            >Sound System</span
+          >
+        </div>
+      </section>
+
+      <section class="gallery" id="gallery">
         <div class="container">
-          <h2>Gallery</h2>
+          <div class="section-header">
+            <span class="section-tag" data-en="Gallery" data-fr="Galerie"
+              >Gallery</span
+            >
+            <h2 data-en="A Glimpse of Paradise" data-fr="Un Aperçu du Paradis">
+              A Glimpse of Paradise
+            </h2>
+          </div>
           <div class="gallery-grid">
-            <div class="gallery-item">
+            <div class="gallery-item large">
               <img
-                src="https://images.unsplash.com/photo-1540959733332-eab4deabeeaf?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1000&q=80"
-                alt="Luxury yacht exterior"
+                src="https://images.unsplash.com/photo-1605281317010-fe5ffe798166?w=1200&q=80"
+                alt="Yacht at sunset"
               />
+              <div class="gallery-overlay">
+                <span
+                  data-en="Sunset Cruises"
+                  data-fr="Croisières au Coucher du Soleil"
+                  >Sunset Cruises</span
+                >
+              </div>
             </div>
             <div class="gallery-item">
               <img
-                src="https://images.unsplash.com/photo-1600271886942-fc5315a652ab?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1000&q=80"
-                alt="Yacht interior cabin"
+                src="https://images.unsplash.com/photo-1559599746-8823b38544c6?w=800&q=80"
+                alt="Yacht deck"
               />
+              <div class="gallery-overlay">
+                <span data-en="Spacious Deck" data-fr="Pont Spacieux"
+                  >Spacious Deck</span
+                >
+              </div>
             </div>
             <div class="gallery-item">
               <img
-                src="https://images.unsplash.com/photo-1571019613454-1cb2f99b2d8b?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1000&q=80"
-                alt="Yacht sailing at sunset"
+                src="https://images.unsplash.com/photo-1540946485063-a40da27545f8?w=800&q=80"
+                alt="Ocean view"
               />
+              <div class="gallery-overlay">
+                <span data-en="Crystal Waters" data-fr="Eaux Cristallines"
+                  >Crystal Waters</span
+                >
+              </div>
             </div>
             <div class="gallery-item">
               <img
-                src="https://images.unsplash.com/photo-1540202404-1b9275e49c9b?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1000&q=80"
-                alt="Yacht deck area"
+                src="https://images.unsplash.com/photo-1544551763-46a013bb70d5?w=800&q=80"
+                alt="Sailing boat"
               />
+              <div class="gallery-overlay">
+                <span data-en="Open Sea" data-fr="Haute Mer">Open Sea</span>
+              </div>
+            </div>
+            <div class="gallery-item">
+              <img
+                src="https://images.unsplash.com/photo-1500514966906-fe245eea9344?w=800&q=80"
+                alt="Boat interior"
+              />
+              <div class="gallery-overlay">
+                <span data-en="Luxury Interior" data-fr="Intérieur Luxueux"
+                  >Luxury Interior</span
+                >
+              </div>
+            </div>
+            <div class="gallery-item large">
+              <img
+                src="https://images.unsplash.com/photo-1569263979104-865ab7cd8d13?w=1200&q=80"
+                alt="Yacht aerial view"
+              />
+              <div class="gallery-overlay">
+                <span
+                  data-en="Your Adventure Awaits"
+                  data-fr="Votre Aventure Vous Attend"
+                  >Your Adventure Awaits</span
+                >
+              </div>
             </div>
           </div>
         </div>
       </section>
 
-      <section class="pricing">
+      <section class="pricing" id="pricing">
         <div class="container">
-          <h2>Charter Rates</h2>
+          <div class="section-header light">
+            <span class="section-tag" data-en="Pricing" data-fr="Tarifs"
+              >Pricing</span
+            >
+            <h2 data-en="Charter Rates" data-fr="Tarifs de Location">
+              Charter Rates
+            </h2>
+            <p
+              class="section-desc"
+              data-en="Choose your perfect escape"
+              data-fr="Choisissez votre évasion parfaite"
+            >
+              Choose your perfect escape
+            </p>
+          </div>
           <div class="pricing-grid">
             <div class="pricing-card">
-              <h3>Half Day Charter</h3>
-              <div class="price">$1,200</div>
-              <p>4 hours of luxury sailing</p>
-              <ul>
-                <li>Professional captain</li>
-                <li>Complimentary beverages</li>
-                <li>Basic sailing equipment</li>
+              <div class="card-header">
+                <h3 data-en="Half Day" data-fr="Demi-Journée">Half Day</h3>
+                <span class="duration" data-en="4 Hours" data-fr="4 Heures"
+                  >4 Hours</span
+                >
+              </div>
+              <div class="price">
+                <span class="currency">$</span>
+                <span class="amount">1,200</span>
+              </div>
+              <ul class="features-list">
+                <li
+                  data-en="Professional captain"
+                  data-fr="Capitaine professionnel"
+                >
+                  Professional captain
+                </li>
+                <li
+                  data-en="Complimentary beverages"
+                  data-fr="Boissons offertes"
+                >
+                  Complimentary beverages
+                </li>
+                <li
+                  data-en="Snorkeling equipment"
+                  data-fr="Équipement de plongée"
+                >
+                  Snorkeling equipment
+                </li>
               </ul>
             </div>
             <div class="pricing-card featured">
-              <h3>Full Day Charter</h3>
-              <div class="price">$2,200</div>
-              <p>8 hours of complete freedom</p>
-              <ul>
-                <li>Professional captain & crew</li>
-                <li>Gourmet lunch included</li>
-                <li>Premium water sports equipment</li>
-                <li>Fuel & mooring fees</li>
+              <div
+                class="popular-badge"
+                data-en="Most Popular"
+                data-fr="Le Plus Populaire"
+              >
+                Most Popular
+              </div>
+              <div class="card-header">
+                <h3 data-en="Full Day" data-fr="Journée Complète">Full Day</h3>
+                <span class="duration" data-en="8 Hours" data-fr="8 Heures"
+                  >8 Hours</span
+                >
+              </div>
+              <div class="price">
+                <span class="currency">$</span>
+                <span class="amount">2,200</span>
+              </div>
+              <ul class="features-list">
+                <li
+                  data-en="Professional captain & crew"
+                  data-fr="Capitaine et équipage professionnels"
+                >
+                  Professional captain & crew
+                </li>
+                <li
+                  data-en="Gourmet lunch included"
+                  data-fr="Déjeuner gastronomique inclus"
+                >
+                  Gourmet lunch included
+                </li>
+                <li
+                  data-en="Water sports equipment"
+                  data-fr="Équipement sports nautiques"
+                >
+                  Water sports equipment
+                </li>
+                <li
+                  data-en="Fuel & mooring fees"
+                  data-fr="Carburant et frais d'amarrage"
+                >
+                  Fuel & mooring fees
+                </li>
               </ul>
             </div>
             <div class="pricing-card">
-              <h3>Weekly Adventure</h3>
-              <div class="price">$12,000</div>
-              <p>7 days of exploration</p>
-              <ul>
-                <li>Full crew service</li>
-                <li>All meals & beverages</li>
-                <li>Complete water sports package</li>
-                <li>Custom itinerary planning</li>
+              <div class="card-header">
+                <h3 data-en="Weekly" data-fr="Semaine">Weekly</h3>
+                <span class="duration" data-en="7 Days" data-fr="7 Jours"
+                  >7 Days</span
+                >
+              </div>
+              <div class="price">
+                <span class="currency">$</span>
+                <span class="amount">12,000</span>
+              </div>
+              <ul class="features-list">
+                <li
+                  data-en="Full crew service"
+                  data-fr="Service d'équipage complet"
+                >
+                  Full crew service
+                </li>
+                <li
+                  data-en="All meals & beverages"
+                  data-fr="Tous repas et boissons"
+                >
+                  All meals & beverages
+                </li>
+                <li
+                  data-en="Custom itinerary"
+                  data-fr="Itinéraire personnalisé"
+                >
+                  Custom itinerary
+                </li>
+                <li data-en="Island hopping" data-fr="Excursions entre îles">
+                  Island hopping
+                </li>
               </ul>
             </div>
           </div>
@@ -131,31 +369,45 @@
 
       <section class="contact" id="contact">
         <div class="container">
-          <h2>Ready to Set Sail?</h2>
-          <p>
-            Contact us today to reserve your dates and start planning your
-            perfect maritime adventure.
-          </p>
-          <div class="contact-info">
-            <div class="contact-item">
-              <h3>Phone</h3>
-              <p>+1 (555) 123-4567</p>
+          <div class="contact-wrapper">
+            <div class="contact-content">
+              <span
+                class="section-tag"
+                data-en="Get in Touch"
+                data-fr="Contactez-Nous"
+                >Get in Touch</span
+              >
+              <h2
+                data-en="Ready to Set Sail?"
+                data-fr="Prêt à Prendre la Mer ?"
+              >
+                Ready to Set Sail?
+              </h2>
+              <p
+                data-en="Contact us to check availability and book your unforgettable yacht experience."
+                data-fr="Contactez-nous pour vérifier la disponibilité et réserver votre expérience yacht inoubliable."
+              >
+                Contact us to check availability and book your unforgettable
+                yacht experience.
+              </p>
             </div>
-            <div class="contact-item">
-              <h3>Email</h3>
-              <p>charters@sereneyacht.com</p>
+            <div class="contact-cards">
+              <div class="contact-card">
+                <div class="contact-icon">📞</div>
+                <h3 data-en="Call Us" data-fr="Appelez-Nous">Call Us</h3>
+                <p>+1 (555) 123-4567</p>
+              </div>
+              <div class="contact-card">
+                <div class="contact-icon">✉️</div>
+                <h3 data-en="Email" data-fr="Email">Email</h3>
+                <p>hello@azuredreams.com</p>
+              </div>
+              <div class="contact-card">
+                <div class="contact-icon">📍</div>
+                <h3 data-en="Location" data-fr="Adresse">Location</h3>
+                <p>Miami Beach Marina, FL</p>
+              </div>
             </div>
-            <div class="contact-item">
-              <h3>Location</h3>
-              <p>Miami Beach Marina, Florida</p>
-            </div>
-          </div>
-          <div class="cta-section">
-            <a
-              href="mailto:charters@sereneyacht.com?subject=Boat Rental Inquiry"
-              class="cta-button"
-              >Send Inquiry</a
-            >
           </div>
         </div>
       </section>
@@ -163,9 +415,50 @@
 
     <footer>
       <div class="container">
-        <p>&copy; 2024 Serene Yacht Charters. All rights reserved.</p>
-        <p>Licensed and insured for your peace of mind.</p>
+        <div class="footer-content">
+          <div class="footer-brand">Azure Dreams</div>
+          <p
+            data-en="&copy; 2024 Azure Dreams Yacht Charters. All rights reserved."
+            data-fr="&copy; 2024 Azure Dreams Yacht Charters. Tous droits réservés."
+          >
+            &copy; 2024 Azure Dreams Yacht Charters. All rights reserved.
+          </p>
+        </div>
       </div>
     </footer>
+
+    <script>
+      document.addEventListener('DOMContentLoaded', function () {
+        const langBtns = document.querySelectorAll('.lang-btn');
+
+        function setLanguage(lang) {
+          document.documentElement.lang = lang;
+
+          langBtns.forEach((btn) => {
+            btn.classList.toggle('active', btn.dataset.lang === lang);
+          });
+
+          document.querySelectorAll('[data-en][data-fr]').forEach((el) => {
+            const text = el.dataset[lang];
+            if (text) {
+              if (el.tagName === 'INPUT' || el.tagName === 'TEXTAREA') {
+                el.placeholder = text;
+              } else {
+                el.innerHTML = text;
+              }
+            }
+          });
+
+          localStorage.setItem('preferredLang', lang);
+        }
+
+        langBtns.forEach((btn) => {
+          btn.addEventListener('click', () => setLanguage(btn.dataset.lang));
+        });
+
+        const savedLang = localStorage.getItem('preferredLang') || 'en';
+        setLanguage(savedLang);
+      });
+    </script>
   </body>
 </html>
